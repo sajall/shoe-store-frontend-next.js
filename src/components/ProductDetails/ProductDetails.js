@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -25,9 +26,9 @@ export default function ProductDetails() {
     }
   };
 
-  useEffect(() => {
-    findProduct();
-  }, []);
+  // useEffect(() => {
+  //   findProduct();
+  // }, []);
 
   const [selectedImage, setSelectedImage] = useState(0);
 
@@ -71,6 +72,7 @@ export default function ProductDetails() {
                 {singleProduct &&
                   images?.map((item, i) => (
                     <img
+                    key={i}
                       alt={`Product ${i + 1}`}
                       onClick={() => handleImageClick(i)}
                       className="w-[100px] "

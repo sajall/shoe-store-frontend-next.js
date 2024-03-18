@@ -1,3 +1,4 @@
+    "use client";
     import React, { useEffect, useState } from "react";
     import { getproductsApi } from "../../api/product/product";
     import { useRouter } from "next/router";

@@ -1,6 +1,8 @@
 "use client";
+
 import { useEffect, useState } from 'react';
 import  Cards from '../Cards/Cards';
+
 import Shoeswiper from '../Shoeswiper/Shoeswiper';
 import { getproductsApi } from '../../api/product/product';
 import { ColorRing } from 'react-loader-spinner';

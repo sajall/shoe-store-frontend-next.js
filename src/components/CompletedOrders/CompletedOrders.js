@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { getOrdersApi } from "../../api/order/orders";
 import { ColorRing } from "react-loader-spinner";
@@ -56,6 +58,7 @@ useEffect(()=>{
                   <img
                     className="h-[70px] w-[70px]"
                     src={item.product.images[0]}
+                    alt=""
                   />
                   <div className=" w-[350px] flex flex-col gap-3">
                     

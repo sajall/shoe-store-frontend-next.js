@@ -1,5 +1,5 @@
 
-
+"use client";
 // import './Onlinepayment.css'
 export function Onlinepayment() {
   return (
@@ -47,6 +47,7 @@ export function Onlinepayment() {
                 />
                 <img
                   src="https://leadershipmemphis.org/wp-content/uploads/2020/08/780370.png"
+                  alt=""
                   className="h-8 ml-3"
                 />
               </label>
@@ -64,6 +65,7 @@ export function Onlinepayment() {
                 />
                 <img
                   src="https://www.sketchappsources.com/resources/source-image/PayPalCard.png"
+                  alt=""
                   className="h-8 ml-3"
                 />
               </label>
@@ -155,6 +157,7 @@ export function Onlinepayment() {
             <img
               className="object-cover object-center w-full h-full rounded-full"
               src="https://i.pinimg.com/originals/60/fd/e8/60fde811b6be57094e0abc69d9c2622a.jpg"
+              alt=""
             />
           </a>
         </div>

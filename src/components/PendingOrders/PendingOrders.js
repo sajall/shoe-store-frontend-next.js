@@ -67,6 +67,7 @@ export function PendingOrders() {
                       <img
                         className="h-[70px] w-[70px]"
                         src={item.product.images[0]}
+                        alt=""
                       />
                       <div className=" w-[350px] flex flex-col gap-3">
                         <h1 className="text-sm font-bold">
