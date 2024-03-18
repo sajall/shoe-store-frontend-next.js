@@ -26,9 +26,9 @@ export default function ProductDetails() {
     }
   };
 
-  // useEffect(() => {
-  //   findProduct();
-  // }, []);
+  useEffect(() => {
+    findProduct();
+  }, []);
 
   const [selectedImage, setSelectedImage] = useState(0);
 
