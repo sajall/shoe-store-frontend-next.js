@@ -70,9 +70,9 @@ import { ColorRing } from "react-loader-spinner";
             <div className="bg-slate-200 h-[400px] w-[300px] flex justify-center sticky top-20">
             <ul className="flex flex-col gap-5 border-b-2 cursor-pointer text-lg justify-center">
             {
-                brands.map((brand)=>{
+                brands.map((brand , i)=>{
                 return(
-                    <li>{brand}</li>
+                    <li key={i}>{brand}</li>
                     )
                 })
                 }
@@ -84,10 +84,10 @@ import { ColorRing } from "react-loader-spinner";
 
 
         { loading ? (<ColorRing/>) :
-        filteredProducts?.filter(product=>product.name.toLowerCase().includes(searchProd))?.map((prod)=>{
+        filteredProducts?.filter(product=>product.name.toLowerCase().includes(searchProd))?.map((prod , i)=>{
         return(
 
-            <div className="w-[300px] h-[420px] gap-5 bg-white shadow-xl">
+            <div key={i} className="w-[300px] h-[420px] gap-5 bg-white shadow-xl">
             <div>
             <img className="w-[100%] h-[90%]" src={prod.images[0]} alt="" />
             </div>

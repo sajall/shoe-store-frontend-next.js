@@ -72,7 +72,7 @@ useEffect(()=>{
 
               {cart.map((crt, i) => {
                 return (
-                  <div className="h-[100px] border-b-2 border-blue-300 flex  p-y-5 gap-5">
+                  <div key={i} className="h-[100px] border-b-2 border-blue-300 flex  p-y-5 gap-5">
                     <img src={crt?.product?.images[0]} alt="" />
                     <div className="w-[450px]">
                       <h1 className="font-bold text-sm">{crt.product.name}</h1>
